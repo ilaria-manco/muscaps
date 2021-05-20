@@ -1,0 +1,33 @@
+# Training configuration
+training:
+  # Experiment id to use in logging and checkpoints
+  experiment_id: null
+  # Maximum number of epochs
+  epochs: 300
+  # Device to be used to train the model. Can be "cuda" or "cpu"
+  device: cuda
+  # Optimizer configuration
+  optimizer: adam
+  # Learning rate
+  lr: 0.0001
+  patience: 5
+  batch_size: 8
+  # Number of workers to be used in dataloader
+  num_workers: 4
+  # Whether to shuffle in dataloader
+  shuffle: true
+  # Whether to pin memory in dataloader
+  pin_memory: false
+  # Whether gradient clipping should be applied 
+  clip_gradients: true
+    
+# Environment configuration
+env:
+  # Base directory of the repo, populated when config is loaded
+  base_dir: null
+  # Directory for storing datasets and models
+  data_root: ${env.base_dir}/data
+  # Directory for experiments, logs, output samples etc.
+  save_dir: ${env.base_dir}/save
+  # Directory for saving models, logs and checkpoints for each experiment
+  experiments_dir: ${env.save_dir}/experiments

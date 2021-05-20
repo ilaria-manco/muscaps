@@ -1,0 +1,25 @@
+ model_config: 
+  model_name: cnn_attention_lstm
+  fusion: early
+  loss: cross_entropy
+  # Feature Extraction
+  finetune: false
+  pool_type: avg
+  feature_extractor_type: hcnn
+  pretrained_version: mtt
+  feature_extractor_path: ${env.data_root}/audio_encoders/${model_config.pretrained_version}_${model_config.feature_extractor_type}.pth
+  # Encoder
+  word_embed_dim: 300
+  hidden_dim_encoder: 256
+  vocab_size: 0
+  # Attention
+  attention_dim: 256
+  attention_type: mlp
+  attention_dropout: 0.25
+  # Decoder
+  dropout_decoder: 0.25
+  hidden_dim_decoder: 256
+  # Inference
+  inference_type: greedy
+  beam_size: 2
+  max_caption_len: 22
