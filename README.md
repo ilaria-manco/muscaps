@@ -96,12 +96,13 @@ python caption.py <experiment_id> --metrics True
 ## Cite
 
 ```bib
-@misc{manco2021muscaps,
-      title={MusCaps: Generating Captions for Music Audio}, 
-      author={Ilaria Manco and Emmanouil Benetos and Elio Quinton and Gyorgy Fazekas},
-      year={2021},
-      eprint={2104.11984},
-      archivePrefix={arXiv}
+@inproceedings{manco2021muscaps,
+    title={MusCaps: Generating Captions for Music Audio}, 
+    author={Manco, Ilaria and Benetos, Emmanouil and Quinton, Elio and Fazekas, György},
+    booktitle={2021 International Joint Conference on Neural Networks (IJCNN)}, 
+    year={2021},
+    pages={1-8},
+    doi={10.1109/IJCNN52387.2021.9533461}
 }
 ```
 
