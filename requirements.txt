@@ -1,4 +1,4 @@
-torch==1.8.1
+torch==2.2.0
 tqdm==4.46.0
 torchtext==0.9.1
 omegaconf==2.0.0
